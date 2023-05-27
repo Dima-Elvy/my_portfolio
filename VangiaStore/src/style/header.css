@@ -1,0 +1,35 @@
+.navigation {
+    padding: 36px 0 50px 0;
+}
+.navigation, .tex_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navigation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #FFF7F5;
+    z-index: -1;
+}
+.basket {
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.menu {
+    margin-left: 60px;
+}
+.tex_nav {
+    margin-left: -80px;
+}
+.tex_nav > p {
+    margin-left: 80px;
+}
